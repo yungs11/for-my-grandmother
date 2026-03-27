@@ -1,0 +1,26 @@
+# ─────────────────────────────────────────────
+# 🧸 for-grandmother — 할머니 말벗 AI Agent
+# Python 의존성 패키지
+# ─────────────────────────────────────────────
+
+# Core
+anthropic>=0.40.0          # Claude API 클라이언트
+
+# STT (Speech-to-Text)
+openai-whisper>=20231117   # Whisper STT
+
+# TTS (Text-to-Speech) — 사용할 provider에 따라 선택
+google-cloud-texttospeech>=2.16.0  # Google Cloud TTS
+# pyttsx3>=2.90             # 오프라인 TTS (fallback)
+
+# Audio
+PyAudio>=0.2.14            # 마이크/스피커 제어
+
+# HTTP
+requests>=2.31.0           # CLOVA API, Telegram 등
+
+# Raspberry Pi (라즈베리파이에서만 설치)
+# RPi.GPIO>=0.7.1          # GPIO 제어
+
+# Utilities
+python-dotenv>=1.0.0       # .env 파일 로드
